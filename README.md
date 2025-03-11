@@ -40,7 +40,7 @@
 
 ## 🖥️ Live Demo
 
-Check out the live demo: [Jimma University GPA/CGPA Calculator](https://dagi-27.github.io/GPA-CGPA-JU/)
+Check out the live demo: [Jimma University GPA/CGPA Calculator](https://dagi-27.github.io/JU-GPA/)    
 
 ## 📸 Screenshots
 
