@@ -22,58 +22,71 @@
                 <button class="tab-btn active" onclick="showTab('gpa')">GPA Calculator</button>
                 <button class="tab-btn" onclick="showTab('cgpa')">CGPA Calculator</button>
             </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimma University GPA/CGPA Calculator</title>
+    <link rel="icon" type="image/png" href="jj.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="jj.png" alt="Jimma University Logo" class="logo" title="Click to reset calculator">
+            <h1>Jimma University GPA/CGPA Calculator</h1>
+            <p class="subtitle">Calculate your Freshman & Pre-Engineering academic performance</p>
+        </header>
 
+        <div class="calculator-container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('gpa')">GPA Calculator</button>
+                <button class="tab-btn" onclick="showTab('cgpa')">CGPA Calculator</button>
+            </div>
+
+            <!-- GPA Calculator Section -->
             <div id="gpa-section" class="tab-content active">
                 <div class="input-section">
                     <label for="programSelect" class="required-field">Select Your Program:</label>
                     <select id="programSelect" class="program-select" required onchange="generateProgramCourses()">
-                        <option value="">Select Program</option>
+                        <option value="">-- Select Program --</option>
                         <option value="freshman">Freshman</option>
                         <option value="preEngineering">Pre-Engineering</option>
                     </select>
                 </div>
-
                 <div id="courseInputs" class="course-inputs"></div>
                 <div id="gpaResult" class="result"></div>
             </div>
 
+            <!-- CGPA Calculator Section -->
             <div id="cgpa-section" class="tab-content">
                 <div class="semester-cards">
                     <div class="semester-card freshman">
-                        <div class="semester-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
+                        <div class="semester-icon"><i class="fas fa-user-graduate"></i></div>
                         <h3>Freshman Semester</h3>
                         <div class="semester-input-group">
                             <label class="required-field">GPA</label>
-                            <input type="text" class="semester-gpa" placeholder="Enter GPA (e.g., 3.50)" 
-                                   min="0" max="4" required>
+                            <input type="text" class="semester-gpa" placeholder="Enter GPA (e.g., 3.50)" min="0" max="4" required>
                         </div>
-                        <div class="credit-badge">
-                            30 Credit Hours
-                        </div>
+                        <div class="credit-badge">30 Credit Hours</div>
                     </div>
 
                     <div class="semester-card pre-engineering">
-                        <div class="semester-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
+                        <div class="semester-icon"><i class="fas fa-cogs"></i></div>
                         <h3>Pre-Engineering Semester</h3>
                         <div class="semester-input-group">
                             <label class="required-field">GPA</label>
-                            <input type="text" class="semester-gpa" placeholder="Enter GPA (e.g., 3.43)" 
-                                   min="0" max="4" required>
+                            <input type="text" class="semester-gpa" placeholder="Enter GPA (e.g., 3.43)" min="0" max="4" required>
                         </div>
-                        <div class="credit-badge">
-                            33 Credit Hours
-                        </div>
+                        <div class="credit-badge">33 Credit Hours</div>
                     </div>
                 </div>
-
                 <button onclick="calculateCGPA()" class="action-btn calculate-btn">
                     <span>Calculate CGPA</span>
                 </button>
-
                 <div id="cgpaResult" class="result"></div>
             </div>
         </div>
@@ -87,7 +100,7 @@
                     <a href="https://www.linkedin.com/in/dagiii" class="social-icon" title="LinkedIn" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/dagi-27" class="social-icon" title="GitHub" target="_blank">
+                    <a href="https://github.com/Dagii27/" class="social-icon" title="GitHub" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://t.me/Dagu27" class="social-icon" title="Telegram" target="_blank">
@@ -99,4 +112,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
